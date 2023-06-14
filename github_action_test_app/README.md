@@ -20,3 +20,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## UPDATE-002
 - Added Github Action
+
+## UPDATE-004
+- Added branch develop on Github Action
