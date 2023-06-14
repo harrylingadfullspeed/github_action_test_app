@@ -17,3 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## UPDATE-001
 - Delete the unwanted comments
+
+## UPDATE-002
+- Added Github Action
