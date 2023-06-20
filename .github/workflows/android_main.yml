@@ -12,7 +12,7 @@ on:
 name: "Build & Release"
 jobs:
   build:
-    name: Build & Release
+    name: ANDROID Build & Release
     runs-on: ubuntu-latest
     steps:
       - uses : actions/checkout@v1
