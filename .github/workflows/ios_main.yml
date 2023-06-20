@@ -12,7 +12,7 @@ on:
 name: "Build & Release"
 jobs:
   build:
-    name: Build & Release
+    name: IOS Build & Release
     runs-on: macos-latest
     steps:
       - uses : actions/checkout@v1
@@ -24,12 +24,12 @@ jobs:
           flutter-version: '3.10.0'
       - run: flutter pub get
       - run: flutter test
-      #- run: |
-      #    cd ios
-      #    rm podfile.lock
-      #    pod deintegrate
-      #    pod repo update
-      #    pod install
+      - run: |
+          cd ios
+          rm podfile.lock
+          pod deintegrate
+          pod repo update
+          pod install
       - run: |
           flutter build ios --no-codesign
           cd build/ios/iphoneos
